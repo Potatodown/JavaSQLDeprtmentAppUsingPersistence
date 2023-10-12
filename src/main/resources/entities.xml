@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="bean.employees">
+        <table name="employees" schema="hr" />
+        <attributes>
+            <id name="employee_id">
+                <column name="employee_id" precision="-1"/>
+            </id>
+            <basic name="first_name">
+                <column name="first_name"/>
+            </basic>
+            <basic name="last_name">
+                <column name="last_name"/>
+            </basic>
+            <basic name="email">
+                <column name="email"/>
+            </basic>
+            <basic name="phone_number">
+                <column name="phone_number"/>
+            </basic>
+            <basic name="hire_date">
+                <column name="hire_date"/>
+            </basic>
+            <basic name="job_id">
+                <column name="job_id"/>
+            </basic>
+            <basic name="salary">
+                <column name="salary"/>
+            </basic>
+            <basic name="Commission_Pct">
+                <column name="Commission_Pct"/>
+            </basic>
+            <basic name="manager_id">
+                <column name="manager_id"/>
+            </basic>
+            <basic name="department_id">
+                <column name="department_id"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
